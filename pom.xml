@@ -11,6 +11,7 @@
     <modules>
         <module>wechat-chat-server</module>
         <module>wechat-framwork</module>
+        <!-- <module>wechat-framwork/wechant-framwork-starter</module> -->
     </modules>
 
     <parent>
@@ -23,7 +24,9 @@
 
     <properties>
         <!--依赖的版本管理-->
-
+        <hutool-all.version>5.8.18</hutool-all.version>
+        <netty-all.version>4.1.76.Final</netty-all.version>
+        <commons-lang3>3.7</commons-lang3>
     </properties>
 
     <dependencyManagement>
@@ -33,8 +36,21 @@
                 <artifactId>wechant-framwork-starter</artifactId>
                 <version>${version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>
