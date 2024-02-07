@@ -40,7 +40,7 @@ public class NettyWebSocketServer {
     private  final Integer WEB_SOCKET_PORT = 8090;
 
     /**
-     * 启动 ws 服务器
+     * 启动 ws 服务
      */
     @PostConstruct  // 这个注解是springboot工程启动的时候就会加载这个注解所在的类
     public void startServer() throws InterruptedException {
@@ -87,7 +87,7 @@ public class NettyWebSocketServer {
     }
 
     /**
-     * 销毁 ws 服务器
+     * 销毁 ws 服务
      */
     @PreDestroy // 这个注解是springbean结束之后对 内存的管理和网络通道等资源关闭需要执行。
     public void destoryServer(){
